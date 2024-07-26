@@ -10,6 +10,7 @@ html{
 body{
     height: 100%;
     background-color: #A9A9A9;
+    font-family: "Raleway", sans-serif;
 }
 
 /* COLORES
@@ -21,11 +22,13 @@ Amarillo Sol (#F4A460)
 Gris Piedra (#A9A9A9)
 Beige Arena (#F5F5DC)
 Verde Algas (#2E8B57) */
+
 /* ----------------- NAVBAR ---------------------- */
 .navBar{
     height: 7%;
     background-color: #4A773C;
-    font-family: "Raleway", sans-serif;
+    display: flex;
+    align-items: center;
 }
 
 .navBar__menu{
@@ -34,7 +37,9 @@ Verde Algas (#2E8B57) */
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     padding: 0.4rem;
+
 }
 
 .navBar__title{
@@ -55,6 +60,123 @@ Verde Algas (#2E8B57) */
 
 }
 
+/* --------------- CARD -------------------------- */
+.timeline{
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    margin: 10px auto;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    height: 25rem;
+    width: 90%;
+    margin: 10px;
+    padding: 10px;
+    background-color: #ffffff9c;
+    border-radius: 5px;
+
+}
+
+.card__name{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    color: #4A773C;
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 100%;
+
+    img{
+        height: 2.1875rem;
+        width: 2.1875rem;
+        border-radius: 20px;
+        margin-right: 0.625rem;
+    }
+
+    a{
+        font-size: 0.7rem;
+        padding-left: 5px;
+    }
+
+}
+
+.card__date{
+    
+    color: #ffffff;
+    font-size: 0.8rem;
+    width: 100%;
+    margin-top: 0.25rem;
+}
+
+.card__description{
+    padding: 5px;
+    text-align: justify;
+    font-size: 0.8rem;
+}
+
+.card__image{
+    margin: auto;
+    height: 60%;
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    
+
+    img{
+        border: 2px solid white;
+    }
+}
+.zorro{
+    height: 100%;
+    width: 100%;
+}
+.pudu1{
+    height: 50%;
+    width: 100%;
+}
+
+.pudu2{
+    height: 50%;
+    width: 50%;
+}
+.pudu3{
+    height: 50%;
+    width: 50%;
+}
+
+.pulpo1,
+.pulpo2{
+    height: 50%;
+    width: 100%;
+}
+
+.card__icon-bar{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 80%;
+    padding-top: 3px;
+
+    button{
+        font-size: 0.6rem;
+        color: #F5F5DC;
+        border: none;
+        background-color: #140a4bb9;
+        padding: 7px;
+        width: 33.333%;
+    }
+
+}
+
+.btn:hover{
+    background-color: #2E8B57;
+}
+
 
 
 
@@ -73,15 +195,42 @@ Verde Algas (#2E8B57) */
 
 /* Dispositivos pequeños (tablets verticales y teléfonos grandes,
 600px y más) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+
+    .card{
+        width: 60%;
+    }
+  
+}
 
 /* Dispositivos medianos (tablets horizontales, 768px y más) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+    .card{
+        width: 50%;
+    }
+}
 
 /* Dispositivos grandes (computadores portátiles/de escritorio, 992px
 y más) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+
+    .navBar__title{
+        font-size: 2rem;
+    }
+    .card{
+        width: 40%;
+    }
+}
 
 /* Dispositivos extra grandes (grandes computadores portátiles y de
 escritorio, 1200px y más) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+
+    .navBar__title{
+        font-size: 2rem;
+    }
+
+    .card{
+        width: 30%;
+    }
+}
