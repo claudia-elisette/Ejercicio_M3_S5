@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    background-color: #A9A9A9;
+}
+
+/* COLORES
+Verde Musgo (#4A773C)
+Verde Menta (#9FE2BF)
+Azul Cielo (#87CEEB)
+Marrón Tierra (#8B4513)
+Amarillo Sol (#F4A460)
+Gris Piedra (#A9A9A9)
+Beige Arena (#F5F5DC)
+Verde Algas (#2E8B57) */
+/* ----------------- NAVBAR ---------------------- */
+.navBar{
+    height: 7%;
+    background-color: #4A773C;
+    font-family: "Raleway", sans-serif;
+}
+
+.navBar__menu{
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem;
+}
+
+.navBar__title{
+    color: #F5F5DC;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.navBar__user{
+    font-size: 0.9rem;
+    padding: 0.125rem;
+    border: 0.03125rem solid #f5f5dc9d;
+    a{
+        color: #F5F5DC;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------- MEDIA QUERIES ----------------- */
+
+/* Dispositivos pequeños (tablets verticales y teléfonos grandes,
+600px y más) */
+@media only screen and (min-width: 600px) {}
+
+/* Dispositivos medianos (tablets horizontales, 768px y más) */
+@media only screen and (min-width: 768px) {}
+
+/* Dispositivos grandes (computadores portátiles/de escritorio, 992px
+y más) */
+@media only screen and (min-width: 992px) {}
+
+/* Dispositivos extra grandes (grandes computadores portátiles y de
+escritorio, 1200px y más) */
+@media only screen and (min-width: 1200px) {}
